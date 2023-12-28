@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Panganhub Dashboard</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+
+    <link rel="stylesheet" href="assets/vendors/iconly/bold.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="assets/vendors/perfect-scrollbar/perfect-scrollbar.css">
+    <link rel="stylesheet" href="assets/vendors/bootstrap-icons/bootstrap-icons.css">
+    <link rel="stylesheet" href="assets/css/app.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="shortcut icon" href="assets/images/favicon.svg" type="image/x-icon">
+</head>
+
+<body>
+    <div id="app">
+        <!-- INI SIDEBAR -->
+        <div id="sidebar" class="active">
+            <div class="sidebar-wrapper active">
+                <div class="sidebar-header">
+                    <div class="d-flex justify-content-between">
+                        <div class="logo">
+                            <a href="index.html"><img class="img-fluid" src="assets/images/logo/panganhub-logo.png"
+                                    alt="Logo" style="width: 100%; height: auto;" srcset=""></a>
+                        </div>
+                        <div class="toggler">
+                            <a href="#" class="sidebar-hide d-xl-none d-block"><i class="bi bi-x bi-middle"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="sidebar-menu">
+                    <ul class="menu">
+                        <li class="sidebar-title">Menu</li>
+                        <li class="sidebar-item  ">
+                            <a href="index.html" class='sidebar-link'>
+                                <i class="bi bi-grid-fill"></i>
+                                <span>Dashboard</span>
+                            </a>
+                        </li>
+
+                        <li class="sidebar-item  has-sub active">
+                            <a href="#" class='sidebar-link'>
+                                <i class="iconly-boldUser"></i>
+                                <span>Pengguna & Role</span>
+                            </a>
+                            <ul class="submenu ">
+                                <li class="submenu-item ">
+                                    <a href="approval-pengguna.html">Approval Anggota
+                                        Baru</a>
+                                </li>
+                                <li class="submenu-item active">
+                                    <a href="pengguna-role.html">Pengguna & Role</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="sidebar-item  has-sub">
+                            <a href="#" class='sidebar-link'>
+                                <i class="ri-building-4-line"></i>
+                                <span>Koperasi</span>
+                            </a>
+                            <ul class="submenu ">
+                                <li class="submenu-item ">
+                                    <a href="koperasi-konfirmasi-penarikan.html">Konfirmasi Penarikan / Topup
+                                        Tabungan</a>
+                                </li>
+                                <li class="submenu-item ">
+                                    <a href="koperasi-topup-tabungan.html">Top Up Tabungan</a>
+                                </li>
+                                <li class="submenu-item ">
+                                    <a href="koperasi-konfigurasi-master-tabungan.html">Konfigurasi
+                                        Master Tabungan</a>
+                                </li>
+                                <li class="submenu-item ">
+                                    <a href="koperasi-simpanan-wajib.html">Simpanan Wajib</a>
+                                </li>
+                                <li class="submenu-item ">
+                                    <a href="koperasi-master-biaya-simpanan-pokok.html">Master Biaya Simpanan Pokok</a>
+                                </li>
+                                <li class="submenu-item ">
+                                    <a href="koperasi-master-biaya-simpanan-wajib.html">Master Biaya Simpanan Wajib</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="sidebar-item  has-sub">
+                            <a href="#" class='sidebar-link'>
+                                <i class="ri-chat-3-line"></i>
+                                <span>Realtime Chat</span>
+                            </a>
+                            <ul class="submenu ">
+                                <li class="submenu-item ">
+                                    <a href="chat-chat.html">Chat</a>
+                                </li>
+                                <li class="submenu-item ">
+                                    <a href="chat-chat anggota.html">Chat Anggota</a>
+                                </li>
+                                <li class="submenu-item ">
+                                    <a href="chat-rating.html"">Rating</a>
+                                </li>
+                                <li class=" submenu-item ">
+                                    <a href=" chat-auto reply.html">Auto Reply</a>
+                                </li>
+                                <li class=" submenu-item ">
+                                    <a href="chat-setting.html" c>Setting</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class=" sidebar-item has-sub">
+                            <a href="#" class='sidebar-link'>
+                                <i class="ri-shopping-cart-2-line"></i>
+                                <span>Groceries</span>
+                            </a>
+                            <ul class="submenu ">
+                                <li class="submenu-item ">
+                                    <a href="groceries-usaha banner.html">Usaha Banner</a>
+                                </li>
+                                <li class="submenu-item ">
+                                    <a href="groceries-usaha kategori.html">Usaha Kategori</a>
+                                </li>
+                                <li class="submenu-item ">
+                                    <a href="groceries-usaha product.html">Usaha Product</a>
+                                </li>
+                                <li class="submenu-item ">
+                                    <a href="groceries-katalog invoice.html">Katalog Invoice</a>
+                                </li>
+                                <li class="submenu-item ">
+                                    <a href="groceries-PPOB Banner.html">PPOB Banner</a>
+                                </li>
+                                <li class="submenu-item ">
+                                    <a href="groceries-PPOB Pascabayar.html">PPOB Pascabayar</a>
+                                </li>
+                                <li class="submenu-item ">
+                                    <a href="groceries-PPOB Prabayar.html">PPOB Prabayar</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="sidebar-item has-sub">
+                            <a href="#" class='sidebar-link'>
+                                <i class="ri-group-2-line"></i>
+                                <span>Forum</span>
+                            </a>
+                            <ul class="submenu">
+                                <li class="submenu-item ">
+                                    <a href="forum-profil forum.html">Profil Pengguna Forum</a>
+                                </li>
+                                <li class="submenu-item ">
+                                    <a href="forum-daftar konten.html">Daftar Konten</a>
+                                </li>
+                                <li class="submenu-item ">
+                                    <a href="forum-konten belajar.html">Konten Belajar</a>
+                                </li>
+                                <li class="submenu-item ">
+                                    <a href="forum-komentar.html">Komentar Forum</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="sidebar-item  has-sub">
+                            <a href="#" class='sidebar-link'>
+                                <i class="ri-wallet-3-line"></i>
+                                <span>Accounting</span>
+                            </a>
+                            <ul class="submenu ">
+                                <li class="submenu-item ">
+                                    <a href="accounting-master rekening.html">Master Rekening</a>
+                                </li>
+                                <li class="submenu-item ">
+                                    <a href="accounting-master COA.html">Master COA</a>
+                                </li>
+                                <li class="submenu-item ">
+                                    <a href="accounting-master jenis transaksi.html">Master Jenis Transaksi</a>
+                                </li>
+                                <li class="submenu-item ">
+                                    <a href="accounting-konfigurasi COA.html">Konfigurasi COA</a>
+                                </li>
+                                <li class="submenu-item ">
+                                    <a href="accounting-jurnal umum.html">Jurnal Umum</a>
+                                </li>
+                                <li class="submenu-item ">
+                                    <a href="accounting-laporan.html">Laporan</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="sidebar-item  has-sub">
+                            <a href="#" class='sidebar-link'>
+                                <i class="ri-shield-user-line"></i>
+                                <span>Manajerial</span>
+                            </a>
+                            <ul class="submenu ">
+                                <li class="submenu-item ">
+                                    <a href="manajerial-simpanan pokok.html">Simpan Pokok</a>
+                                </li>
+                                <li class="submenu-item ">
+                                    <a href="manajerial-simpanan wajib.html">Simpan Wajib</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="sidebar-item  has-sub">
+                            <a href="#" class='sidebar-link'>
+                                <i class="ri-shield-user-line"></i>
+                                <span>Manajemen</span>
+                            </a>
+                            <ul class="submenu ">
+                                <li class="submenu-item ">
+                                    <a href="manajemen-learning.html">Learning</a>
+                                </li>
+                                <li class="submenu-item ">
+                                    <a href="manajemen-promosi.html">Promosi</a>
+                                </li>
+                                <li class="submenu-item ">
+                                    <a href="manajemen-FAQ.html">FAQ</a>
+                                </li>
+                                <li class="submenu-item ">
+                                    <a href="manajemen-kritik saran.html">Kritik dan Saran</a>
+                                </li>
+                                <li class="submenu-item ">
+                                    <a href="manajemen-master UoM.html">Master UoM</a>
+                                </li>
+                                <li class="submenu-item ">
+                                    <a href="manajemen-bank.html">Bank</a>
+                                </li>
+                            </ul>
+                        </li>
+
+
+
+                    </ul>
+                </div>
+                <button class="sidebar-toggler btn x"><i data-feather="x"></i></button>
+            </div>
+        </div>
+        <!-- INI BATAS SIDEBAR -->
+        <div id="main2">
+            <div class="row py-3 px-3" style="background-color: #7AD759;">
+                <div class="col-12">
+                    <div class="dropdown">
+                        <a class="btn btn-primary dropdown-toggle float-end" href="#" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false" style="border: 0;">
+                            <img class="avatar avatar-lg img-fluid" src="assets/images/faces/1.jpg" alt=""
+                                style="width: 50px;">
+                            Admin
+                        </a>
+
+                        <ul class="dropdown-menu">
+                            <li><a style="border-bottom: solid 1px #a5a5a5;" class="dropdown-item" href="#">Profile</a>
+                            </li>
+                            <li><a class="dropdown-item" href="#">Notifikasi</a></li>
+                            <li><a class="dropdown-item" href="#">Log Out</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="main2">
+            <header class="mb-3">
+                <a href="#" class="burger-btn d-block d-xl-none">
+                    <i class="bi bi-justify fs-3"></i>
+                </a>
+            </header>
+            <div class="page-content">
+                <div id="main-content" style="padding: 0; margin: 2rem;">
+
+                    <div class="page-heading">
+                        <div class="page-title">
+                            <div class="row">
+                                <div class="col-12 col-md-6 order-md-1 order-last">
+                                    <h3>Pengguna dan Role</h3>
+                                    <p class="text-subtitle text-muted">Pengguna.</p>
+                                </div>
+                                <div class="col-12 col-md-6 order-md-2 order-first">
+                                    <nav aria-label="breadcrumb" class="breadcrumb-header float-start float-lg-end">
+                                        <ol class="breadcrumb">
+                                            <li class="breadcrumb-item active" aria-current="page">Pengguna</li>
+                                        </ol>
+                                    </nav>
+                                </div>
+                            </div>
+                        </div>
+                        <section class="section">
+                            <div class="card">
+                                <div class="card-header">
+                                    <h4 class="card-title">Pengguna</h4>
+                                </div>
+
+                                <div class="card-body">
+                                    <a href="https://dev.panganhub.hdnmetatech.com/pengguna/pengguna/add"
+                                        class="btn btn-success btn-sm">Tambah</a>
+                                    <a href="https://dev.panganhub.hdnmetatech.com/pengguna/pengguna/add_simpok"
+                                        class="btn btn-success btn-sm">Tambah Pengguna Daftar Offline</a>
+                                    <a href="https://dev.panganhub.hdnmetatech.com/pengguna/pengguna/excel"
+                                        class="btn btn-success btn-sm" target="__blank">Export Excel</a>
+                                    <div class="col-12 table-responsive">
+                                        <div id="tblData_wrapper" class="dataTables_wrapper dt-bootstrap4 no-footer">
+                                            <div id="tblData_filter" class="dataTables_filter"><label>Search:<input
+                                                        type="search" class="form-control form-control-sm"
+                                                        placeholder="" aria-controls="tblData"></label></div>
+                                            <div id="tblData_processing" class="dataTables_processing card"
+                                                style="display: none;">Processing...</div>
+                                            <table class="table table-bordered pengguna_datatable dataTable no-footer"
+                                                id="tblData" role="grid" aria-describedby="tblData_info"
+                                                style="width: 1065px;">
+                                                <thead>
+                                                    <tr role="row">
+                                                        <th class="sorting" tabindex="0" aria-controls="tblData"
+                                                            rowspan="1" colspan="1" style="width: 97.4px;"
+                                                            aria-label="No Anggota: activate to sort column ascending">
+                                                            No Anggota</th>
+                                                        <th class="sorting" tabindex="0" aria-controls="tblData"
+                                                            rowspan="1" colspan="1" style="width: 95.4px;"
+                                                            aria-label="Nama: activate to sort column ascending">Nama
+                                                        </th>
+                                                        <th class="sorting" tabindex="0" aria-controls="tblData"
+                                                            rowspan="1" colspan="1" style="width: 223.4px;"
+                                                            aria-label="Email: activate to sort column ascending">Email
+                                                        </th>
+                                                        <th class="sorting" tabindex="0" aria-controls="tblData"
+                                                            rowspan="1" colspan="1" style="width: 117.4px;"
+                                                            aria-label="WA: activate to sort column ascending">WA</th>
+                                                        <th class="sorting" tabindex="0" aria-controls="tblData"
+                                                            rowspan="1" colspan="1" style="width: 152.4px;"
+                                                            aria-label="Tanggal Daftar: activate to sort column ascending">
+                                                            Tanggal Daftar</th>
+                                                        <th class="sorting" tabindex="0" aria-controls="tblData"
+                                                            rowspan="1" colspan="1" style="width: 93.4px;"
+                                                            aria-label="Role: activate to sort column ascending">Role
+                                                        </th>
+                                                        <th class="sorting" tabindex="0" aria-controls="tblData"
+                                                            rowspan="1" colspan="1" style="width: 68.4px;"
+                                                            aria-label="Status: activate to sort column ascending">
+                                                            Status</th>
+                                                        <th class="sorting_disabled" rowspan="1" colspan="1"
+                                                            style="width: 76.4px;" aria-label="Aksi">Aksi</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr role="row" class="odd">
+                                                        <td>20230008</td>
+                                                        <td>aditya nanda</td>
+                                                        <td>aditya.nanda0030@gmail.com</td>
+                                                        <td>123456</td>
+                                                        <td>07-12-2023 14:23:00</td>
+                                                        <td>Anggota</td>
+                                                        <td><span class="badge bg-success">Anggota</span></td>
+                                                        <td>
+                                                            <div class="btn-group">
+                                                                <button type="button"
+                                                                    class="btn btn-danger dropdown-toggle"
+                                                                    data-toggle="dropdown" aria-haspopup="true"
+                                                                    aria-expanded="false">
+                                                                    Aksi
+                                                                </button>
+                                                                <div class="dropdown-menu">
+                                                                    <a class="dropdown-item"
+                                                                        href="https://dev.panganhub.hdnmetatech.com/pengguna/pengguna/detail/eyJpdiI6InlPR2gyckJnZUFSWXhQOW1YUklRL1E9PSIsInZhbHVlIjoiZXJZKzdEMjRUczhIOGRYRExCSzNFN25aWTM3eVdIWTAzRjRQWmZLZEd0blJrZnlHeE9TNnhQOUQycTdKVFV4VzdxdHgyTzJ3Y21iOWlvQmZDWUgxVURWVDBPQmcrV1piU2gvSHRtZlN6Y25FTDNYdk81TldlRVVkTlRaVWJHVmFDek9EQmlpaFJkNXdGTHZVTkpMQjZPUzFNbE1GQTF0Vkl6Y2dvSHNVY05Jb2h3NXY2RytkTk1wSytPMnFJZ0lmb3NZRjF5RmF6cllrYTl4OUR4Vm9nRzl5Uzd0TlNDVUgrVkFSNG5ZblNBRWE0S2xVYmwrbnV1OFU0UEVmYTZwUXR2MTNKYXlVR1VpUGpwand2TU5EbTg1S1RLK3N4T1dKdWw3SFhaY1doK1plcXg1WnByVmZ1L2dUVWlVQ0F4NlNuWWE0dWxEMEk3aWl6MHU2TFpjU1VjbWd4NVNIbWdSQThDQW9yeUwyTU5qSUpzaS9WR3BHQUJReWYzTm5odUo5QmtHdVk4UGNmVlpXay9jWWFmMnZLNFY5TUh5MENjbEwyMVdFQWFXYktVdmEyalNYK3p1Y29pUGNPK3prbThhUTdlaGZMWXR3YUhTdE1RVCtVU0I1NjltT0VmNG84d09wK09VRGRBWTdmUWUrZzZVTTVQQUFlZEdWUTRVTG82aGR1ODZsWGpUbXZXVVkwS3l4VVdJdElrS01MbkQ0ZWN0QXpEUFdzMFF5OVJQcTIrTVhuRTJLTDZSOFNaa1h6YTFZdWt3VlJ1dndKbjBVUXRHMjJySkwwRWNBN09tOUtJbldVcGtxSGpuQjIwZXJDS1d1ZmxEMzZyMGZRWXEyTUY4TTJXdlJ5VjFLR1dCamo1VzV3UzdnQi9id3dCcWFLSGRFQVBnaFc3dXlYTkgvRU9xaU9UdFlhMnBuaG9nMlZpRjRPbkQ5UEZyeldDdlZhTWFPTm9JSkhCUE02b1hSQTlNb0VCNVZNVG5PRFVqUDgrY1RpYTQ1WXBreTNwclF1VG0xU1lhY21ML3k2eExYWTZYZlBsc25MZjBwdElGbDkzMFJJV2NtOHpFSmFiTEEvRW5tUVpUT1lSbytNZnNhL2JQL1Q2OFB6MzhnMzQ0N0lNOVpEQ1Rsc01ZSDIxNGdEaGtHY3gvank4ZHVrR3IxSnA0cFMzR1J5Mmo5bDRPdy9RTE5lRWlKTHZmTXRMY1dMdE1EdDYycmM1aVNhQkhvbHJ6T2dVR2ptdGVIZWIrUUxLY2YzSFlZM3hpYUFublRiYWwzOGpIZWswRzV4WU9heGlyRmwzWDN5Y2lEWVlqa09TdUVXVlBhKytLQytKNTBXL2JhcmxtT0lSWWU4SGx4QVduaksvVGlZQlpIMzE0VnN4dmNtY09VVFVQbm5nbVZnVUlJM0VDNTNydFpRWEM3ZWh2bFppeUJqY1pxMm81SXJjQk40WTM2ZE83K0lOdUJMbG1pTVF0TzhqZ2VXOW1HSC8xUUFwMXpuaktxNHN3NVJ0YnBkc1RQT25nU3dwRHR2Q0hFWkhYQjhINWhKU08rZDBrNkQ1K1RzZW9Lc1hNVFYzY05VM0w3aTNSbzBzNXNTMC9FRXZZNnJvSDNqNDlKTmpZeUlEb3VNd2oxdE1ZRDhBWHJTUk41SVBhemkwcEZVeXMwTjFlV2xFd2pDRGw0WlRBOU9SaVpYT0ZjeWxnMUp5dVlvU2h2eUkyN0dMNTRUUUdDc1pYaXdWRkt4eURTeTlzVFA3U3NxajVqUHp2Zkw0MU9mRkkxV1c5OU1wbkJnQ2Njd1NKQ1FNSEU2dzZWd216c3Nobk9YQm5hbG5mS0cvYWg3UlJFOG02aTZURXhLUXBBcFRIZU9CTEZCSkZ0MzQ4ZTNyQWNJLzlUSXFiZ1NGVUdoK1FuRmFrclFZeHFIUTRFSGd1VmlLODk0UGtTVi9rL3RoWTF3TDF2cmlVYlQ0S1J4aWxUUElsRG1QSzhVUVBwbmQ1YjlHd0RLejBtYm9yL1dVc0dZN3BDVENlUFlaenVxT2k3dXMrQndhWXRMdmgrcTNBbCtWTWYzME1TaGZyM0xUWUEwMThLdnRSdllwUWpaUTdBT0lvMXFzOWQ2ODhkVkpiL3E1NEJocWZ5ZC8rdVJRU3JPODY4OHpSbDlvUzlmelRoWGJQbGd0ZlExS0kxOGVJRWRGb2UvdzF3bFZiTE1NdXhjRG9UUzBUdjF0S2FqT2M5R0cvZW4wUk8wY0V0bWE1WUkxZFBFdjBHNmpsTnU5Z0M4by80SUd1UkhCVmxGV1gyYm9uV1hlM2pmZjNZNFJhektsZ2xzSTJ1bHNMallnQ0tyMjNOS2E5SUJ5UWR4UkNEdFA1dE1VWWxJVTJYYWxnTjJLYXRLWEhPR3FQajYzaTBoWVFJR1FZN3JHVzVyTjZEN1lEaHhKWEZvY1R2aGdiak9DYVk0YXRwVHdpWnpLU0R3cDgyUnpJT0RWcUd6bnZMQVpZZlBRSVBXT1pmRmtvelkxUnp6QWtPUHQ5cUlLVzltVE0wY0IyTXNJZkNmZXZxSWlpd0YwcktOOUhSdmtmZ3o0Tll5WlRZZWJRY1JPbzBuVENha2pCQTVEWTVxV0xGZ3Buckg3WjZZSjJ2WnR4OE5OK0dva05LMXlNdmIxeGgyMmh6SDRMbXVCV0xLeTdzSUE9PSIsIm1hYyI6ImIwZDdmZWZjNTZhY2MxODBjOTBjNDJjYjE0ODUyYzNmNjI4ZTYzMDI5OWNmMTk3MDE3ODYwMjMwZDYyYzE4ZjUiLCJ0YWciOiIifQ==">Lihat</a>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr role="row" class="even">
+                                                        <td></td>
+                                                        <td>Pimpinan</td>
+                                                        <td>pimpinan@gmail.com</td>
+                                                        <td>089695615254</td>
+                                                        <td>07-12-2023 14:04:12</td>
+                                                        <td>Pimpinan</td>
+                                                        <td><span class="badge bg-success">Anggota</span></td>
+                                                        <td>
+                                                            <div class="btn-group">
+                                                                <button type="button"
+                                                                    class="btn btn-danger dropdown-toggle"
+                                                                    data-toggle="dropdown" aria-haspopup="true"
+                                                                    aria-expanded="false">
+                                                                    Aksi
+                                                                </button>
+                                                                <div class="dropdown-menu">
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr role="row" class="odd">
+                                                        <td></td>
+                                                        <td>Kurir</td>
+                                                        <td>kurir@gmail.com</td>
+                                                        <td>085695615252</td>
+                                                        <td>07-12-2023 14:04:12</td>
+                                                        <td>Kurir</td>
+                                                        <td><span class="badge bg-success">Anggota</span></td>
+                                                        <td>
+                                                            <div class="btn-group">
+                                                                <button type="button"
+                                                                    class="btn btn-danger dropdown-toggle"
+                                                                    data-toggle="dropdown" aria-haspopup="true"
+                                                                    aria-expanded="false">
+                                                                    Aksi
+                                                                </button>
+                                                                <div class="dropdown-menu">
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr role="row" class="even">
+                                                        <td></td>
+                                                        <td>Mitra Helper</td>
+                                                        <td>mitrahelper@gmail.com</td>
+                                                        <td>089695615252</td>
+                                                        <td>07-12-2023 14:04:12</td>
+                                                        <td>Mitra Helper</td>
+                                                        <td><span class="badge bg-success">Anggota</span></td>
+                                                        <td>
+                                                            <div class="btn-group">
+                                                                <button type="button"
+                                                                    class="btn btn-danger dropdown-toggle"
+                                                                    data-toggle="dropdown" aria-haspopup="true"
+                                                                    aria-expanded="false">
+                                                                    Aksi
+                                                                </button>
+                                                                <div class="dropdown-menu">
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr role="row" class="odd">
+                                                        <td></td>
+                                                        <td>Mitra Petani</td>
+                                                        <td>mitrapetani@gmail.com</td>
+                                                        <td>081695615252</td>
+                                                        <td>07-12-2023 14:04:12</td>
+                                                        <td>Mitra Petani</td>
+                                                        <td><span class="badge bg-success">Anggota</span></td>
+                                                        <td>
+                                                            <div class="btn-group">
+                                                                <button type="button"
+                                                                    class="btn btn-danger dropdown-toggle"
+                                                                    data-toggle="dropdown" aria-haspopup="true"
+                                                                    aria-expanded="false">
+                                                                    Aksi
+                                                                </button>
+                                                                <div class="dropdown-menu">
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr role="row" class="even">
+                                                        <td></td>
+                                                        <td>Logistik</td>
+                                                        <td>logistik@gmail.com</td>
+                                                        <td>082695615252</td>
+                                                        <td>07-12-2023 14:04:12</td>
+                                                        <td>Logistik</td>
+                                                        <td><span class="badge bg-success">Anggota</span></td>
+                                                        <td>
+                                                            <div class="btn-group">
+                                                                <button type="button"
+                                                                    class="btn btn-danger dropdown-toggle"
+                                                                    data-toggle="dropdown" aria-haspopup="true"
+                                                                    aria-expanded="false">
+                                                                    Aksi
+                                                                </button>
+                                                                <div class="dropdown-menu">
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr role="row" class="odd">
+                                                        <td></td>
+                                                        <td>Admin</td>
+                                                        <td>admin@gmail.com</td>
+                                                        <td>087695615256</td>
+                                                        <td>07-12-2023 14:04:11</td>
+                                                        <td>Admin</td>
+                                                        <td><span class="badge bg-success">Anggota</span></td>
+                                                        <td>
+                                                            <div class="btn-group">
+                                                                <button type="button"
+                                                                    class="btn btn-danger dropdown-toggle"
+                                                                    data-toggle="dropdown" aria-haspopup="true"
+                                                                    aria-expanded="false">
+                                                                    Aksi
+                                                                </button>
+                                                                <div class="dropdown-menu">
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr role="row" class="even">
+                                                        <td>60230001</td>
+                                                        <td>Anggota</td>
+                                                        <td>anggota0@gmail.com</td>
+                                                        <td>0822313425151</td>
+                                                        <td>07-12-2023 14:04:11</td>
+                                                        <td>Anggota</td>
+                                                        <td><span class="badge bg-success">Anggota</span></td>
+                                                        <td>
+                                                            <div class="btn-group">
+                                                                <button type="button"
+                                                                    class="btn btn-danger dropdown-toggle"
+                                                                    data-toggle="dropdown" aria-haspopup="true"
+                                                                    aria-expanded="false">
+                                                                    Aksi
+                                                                </button>
+                                                                <div class="dropdown-menu">
+                                                                    <a class="dropdown-item"
+                                                                        href="https://dev.panganhub.hdnmetatech.com/pengguna/pengguna/detail/eyJpdiI6IkxMZ1NJQjVXMHNNQ0NrQy9icTM1cHc9PSIsInZhbHVlIjoiRjRWYzE5bXVCMFQwdHluQ2ovSTNOOU1MbEJwTVh1a255NUM4U3gwbUVFcXM3Y3d1QmVTQ1Z0WVBxdHZEMnArK290OFRHY2U1MEphc1ZmVFNjQXhNa2xIcWovZyt3dlR4RHpzc0xZLzhzOWZDWWpBU2dPZW90UGY5bElnc1VHcGhRQms1TGwzckR0RHMvVzVVOFA5Z01wajZ0M3ZBdWtidlo5RSsyVkVpTTdzZU9DeEYvRThwNWJDNFlBOEpScjRwTmxYK3FLUmdndmVieU42ODhIVDZvcVBDS002UjdSUzYreURVbmUveTloYlpBNHhuUzZ0anNBYllHVEdPMnNHZjFkdFRjcjZ3YXg0SmJnajY3dFlhaXRTb2ZqVTMrTUgzTmViWXNiaVZlTHFhQ1FvazZ3dFY4U1YwYVpFOWZaUTZ0TmlNMi9pZGJ1RHBmQUNraWt5U1ZnNXdTdWl6ZzVJdVdCbDV2LzFxWklmNWxGc3VjRHpLcVhad3hEMTVlSUc0am5QRFNsY2tsUWxiTnRxbHhiQnZFREhIMEU1NWpzU0dlc3lGWnFaQ0p3YjM5dDNlRDEwYUFaTlc1T2sxbXVEZXVKN1ZCN1FuNVRLY3FvLzVnbE94cFFzaVRZNXl0R1dzcFZhZEdtSEN1ZHZndXZmT2JXbS90WTNnVzRJYVRYMEtHdDZ5NUZ3WFI4TFByc1JZS1Nqei91M2poaE13aFNUa2c5S0w0eG9WcFNuQ2I3dGl0VWVLcGFQdFFJMFEyMEk2ZjZGRSt6M0IzVjJvSXlpMCtZYW9OWk5Xa2JzMEdvMXhVZkxabHlFdy9GY2RLdkRxUGhFVVdGcXloQkFjVkxNb1FRV0M2Q0JNZHF0dGhuR2VkcjZVWUwwSlllL2o5OE5HWHBDS0R3b1ErNlJrejgxb2l5UTB3eng1RkF5WjllU1gzSmxoNTU1OWZybkFFV0ZOUisrU1NwZkxsQUh2Zi9RWTRuYXZQZWhnalVJZHd3Z0h2TXhibXdab0J4ZjJVQ1VrVUhNK3Vsc0ZVU3E2ZTBWVExlS2N3QXRlcExENkQrcC9GaE5Gc2NVak9wRW5hOXJXZTI5RFVpVzVtTnlBNHVBUnByMENYU1hmTUNPd041cjBqWXUzWXRKdlJiTXE2VzYvaGtla3FSSzQ3ellMNkdjQ2tkd0toL0tUNnhpZTNyL08xcnQ5Z2I5MEZLeFBIa2VKczlyYTNhK283eTQ5M0dmV3RsbHEvcThxcVBGdnQya2xBSEJGNWFEVi9kbXQxWmROQTZ6SUdJeFlPc3RHaTZMcDNNeXZBRHpMYXhkVGp1YkRJYXh1TFp2MXlkVkNWOFZFYmlISlQzNU1RZ29mMnJDQjMzdUo1TTlCSmdrWDUrK0NhNlgxOXA1VzVGTUtlUDh6VzZVcC9KVEV5MDB5Ni83cTVNcWdMU1JrbWZxcTUyZWlGT1hpaFJmVFlJZWNFZlh3YlhYU3kzbGtDbFdRU3Q4azMxUXZOVWEzWG9zeENhbXRVOFliNDZnUVZSSmxaRVoySnFxdEZHWDYzdEJLSFFVTDhFY0pYMHVmOWhSbzcxbjBKKzVEU25CQnhIaHpoYjk5QjVoVjNtVTMxZGxyWnVKWVRUN200dmdDMTVURm1YZ080dS82aGxiZjNyUnQxb3JFTEZlZWJqZkpZQUpLek5lY0E2Snplcm85aW10cTU2U1lZT2JseUZ3TytwemJuVWdnTVFBSWtSYWpGSkFnbXE0NE9GMFhEeTgwTCtFY2taSEw0ZWdTekpBN0VNWnlVUU9hTU5meEtRUXZia0M5MG0xRnNaMFdkRGtFeWhycGVhUmJqdUhLdDZnWHhpOWxNTDZEMTcrS3o0WlRwMFVtSjdzY3Y3WGRERG1Rd1RYK1MrbGY5R0lXK0oya3lUMlp3c1RtS0dzdVN2QUdPYUYyMFFhc1ZvVUlOMlpiRUhxNnY0UG1EL2YxU05WaFgzUjBoRk9vMVpJVUVYWHplN0p3OGdLMWlteHZDZS9aUGd1dC9Kc0d6R1ZDQXFPdC85clJtcENEdGpwdTREMjV5eFlmNHdqdlFiQmlSVlM4MzNCNWUySE5GdFZPZlhYYTQvenBjWFEwRTV1WE96R2ZrdXBnY1dtVEtFeDRhM29PVTl1cTRrM2VEL2dMcFdGQi9VKy9qVXRIWUtSeEEwN1ZYNDlJZ2ZKUG1GdXZxSGJ2KzNBaytsWGhqcDdOemd4RGIyZDhDL2h0Yk54bEtJYXpydVFUcytSc01mVzdOMCtnZUVVPSIsIm1hYyI6IjVjZDE1YTM5NjZkYTg4YjAzMzZlYzQ4MWRhMTYxYzFhY2IwNGE1OWIwMzA1MzFiNzA0MzA4OGVlOGQ1OTYwYzIiLCJ0YWciOiIifQ==">Lihat</a>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            <div class="dataTables_info" id="tblData_info" role="status"
+                                                aria-live="polite">Showing 1 to 8 of 8 entries</div>
+                                            <div class="dataTables_paginate paging_simple_numbers"
+                                                id="tblData_paginate">
+                                                <ul class="pagination">
+                                                    <li class="paginate_button page-item previous disabled"
+                                                        id="tblData_previous"><a href="#" aria-controls="tblData"
+                                                            data-dt-idx="0" tabindex="0" class="page-link">Previous</a>
+                                                    </li>
+                                                    <li class="paginate_button page-item active"><a href="#"
+                                                            aria-controls="tblData" data-dt-idx="1" tabindex="0"
+                                                            class="page-link">1</a></li>
+                                                    <li class="paginate_button page-item next disabled"
+                                                        id="tblData_next"><a href="#" aria-controls="tblData"
+                                                            data-dt-idx="2" tabindex="0" class="page-link">Next</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+
+                    <footer>
+                        <div class="footer clearfix mb-0 text-muted">
+                            <div class="float-start">
+                                <p>2023 © PanganHub</p>
+                            </div>
+                            <div class="float-end">
+
+                            </div>
+                        </div>
+                    </footer>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="assets/vendors/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+
+    <script src="assets/vendors/apexcharts/apexcharts.js"></script>
+    <script src="assets/js/pages/dashboard.js"></script>
+
+    <script src="assets/js/mazer.js"></script>
+</body>
+
+</html>

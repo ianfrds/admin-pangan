@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Panganhub Dashboard</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+
+    <link rel="stylesheet" href="assets/vendors/iconly/bold.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="assets/vendors/perfect-scrollbar/perfect-scrollbar.css">
+    <link rel="stylesheet" href="assets/vendors/bootstrap-icons/bootstrap-icons.css">
+    <link rel="stylesheet" href="assets/css/app.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="shortcut icon" href="assets/images/favicon.svg" type="image/x-icon">
+</head>
+
+<body>
+    <div id="app">
+        <div id="sidebar" class="active">
+            <div class="sidebar-wrapper active">
+                <div class="sidebar-header">
+                    <div class="d-flex justify-content-between">
+                        <div class="logo">
+                            <a href="index.html"><img class="img-fluid" src="assets/images/logo/panganhub-logo.png"
+                                    alt="Logo" style="width: 100%; height: auto;" srcset=""></a>
+                        </div>
+                        <div class="toggler">
+                            <a href="#" class="sidebar-hide d-xl-none d-block"><i class="bi bi-x bi-middle"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="sidebar-menu">
+                    <ul class="menu">
+                        <li class="sidebar-title">Menu</li>
+                        <li class="sidebar-item ">
+                            <a href="index.html" class='sidebar-link'>
+                                <i class="bi bi-grid-fill"></i>
+                                <span>Dashboard</span>
+                            </a>
+                        </li>
+
+                        <li class="sidebar-item  has-sub">
+                            <a href="#" class='sidebar-link'>
+                                <i class="iconly-boldUser"></i>
+                                <span>Pengguna & Role</span>
+                            </a>
+                            <ul class="submenu ">
+                                <li class="submenu-item ">
+                                    <a href="approval-pengguna.html">Approval Anggota
+                                        Baru</a>
+                                </li>
+                                <li class="submenu-item ">
+                                    <a href="pengguna-role.html">Pengguna & Role</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="sidebar-item  has-sub">
+                            <a href="#" class='sidebar-link'>
+                                <i class="ri-building-4-line"></i>
+                                <span>Koperasi</span>
+                            </a>
+                            <ul class="submenu ">
+                                <li class="submenu-item ">
+                                    <a href="koperasi-konfirmasi-penarikan.html">Konfirmasi Penarikan / Topup
+                                        Tabungan</a>
+                                </li>
+                                <li class="submenu-item ">
+                                    <a href="koperasi-topup-tabungan.html">Top Up Tabungan</a>
+                                </li>
+                                <li class="submenu-item ">
+                                    <a href="koperasi-konfigurasi-master-tabungan.html">Konfigurasi
+                                        Master Tabungan</a>
+                                </li>
+                                <li class="submenu-item ">
+                                    <a href="koperasi-simpanan-wajib.html">Simpanan Wajib</a>
+                                </li>
+                                <li class="submenu-item ">
+                                    <a href="koperasi-master-biaya-simpanan-pokok.html">Master Biaya Simpanan Pokok</a>
+                                </li>
+                                <li class="submenu-item ">
+                                    <a href="koperasi-master-biaya-simpanan-wajib.html">Master Biaya Simpanan Wajib</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="sidebar-item  has-sub ">
+                            <a href="#" class='sidebar-link'>
+                                <i class="ri-chat-3-line"></i>
+                                <span>Realtime Chat</span>
+                            </a>
+                            <ul class="submenu ">
+                                <li class="submenu-item ">
+                                    <a href="chat-chat.html">Chat</a>
+                                </li>
+                                <li class="submenu-item ">
+                                    <a href="chat-chat anggota.html">Chat Anggota</a>
+                                </li>
+                                <li class="submenu-item ">
+                                    <a href="chat-rating.html"">Rating</a>
+                                </li>
+                                <li class=" submenu-item ">
+                                    <a href=" chat-auto reply.html">Auto Reply</a>
+                                </li>
+                                <li class=" submenu-item active">
+                                    <a href="chat-setting.html" c>Setting</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class=" sidebar-item has-sub">
+                            <a href="#" class='sidebar-link'>
+                                <i class="ri-shopping-cart-2-line"></i>
+                                <span>Groceries</span>
+                            </a>
+                            <ul class="submenu ">
+                                <li class="submenu-item ">
+                                    <a href="groceries-usaha banner.html">Usaha Banner</a>
+                                </li>
+                                <li class="submenu-item ">
+                                    <a href="groceries-usaha kategori.html">Usaha Kategori</a>
+                                </li>
+                                <li class="submenu-item ">
+                                    <a href="groceries-usaha product.html">Usaha Product</a>
+                                </li>
+                                <li class="submenu-item ">
+                                    <a href="groceries-katalog invoice.html">Katalog Invoice</a>
+                                </li>
+                                <li class="submenu-item ">
+                                    <a href="groceries-PPOB Banner.html">PPOB Banner</a>
+                                </li>
+                                <li class="submenu-item ">
+                                    <a href="groceries-PPOB Pascabayar.html">PPOB Pascabayar</a>
+                                </li>
+                                <li class="submenu-item active">
+                                    <a href="groceries-PPOB Prabayar.html">PPOB Prabayar</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="sidebar-item has-sub">
+                            <a href="#" class='sidebar-link'>
+                                <i class="ri-group-2-line"></i>
+                                <span>Forum</span>
+                            </a>
+                            <ul class="submenu">
+                                <li class="submenu-item active">
+                                    <a href="forum-profil forum.html">Profil Pengguna Forum</a>
+                                </li>
+                                <li class="submenu-item ">
+                                    <a href="forum-daftar konten.html">Daftar Konten</a>
+                                </li>
+                                <li class="submenu-item ">
+                                    <a href="forum-konten belajar.html">Konten Belajar</a>
+                                </li>
+                                <li class="submenu-item ">
+                                    <a href="forum-komentar.html">Komentar Forum</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="sidebar-item  has-sub">
+                            <a href="#" class='sidebar-link'>
+                                <i class="ri-wallet-3-line"></i>
+                                <span>Accounting</span>
+                            </a>
+                            <ul class="submenu ">
+                                <li class="submenu-item ">
+                                    <a href="accounting-master rekening.html">Master Rekening</a>
+                                </li>
+                                <li class="submenu-item ">
+                                    <a href="accounting-master COA.html">Master COA</a>
+                                </li>
+                                <li class="submenu-item ">
+                                    <a href="accounting-master jenis transaksi.html">Master Jenis Transaksi</a>
+                                </li>
+                                <li class="submenu-item ">
+                                    <a href="accounting-konfigurasi COA.html">Konfigurasi COA</a>
+                                </li>
+                                <li class="submenu-item ">
+                                    <a href="accounting-jurnal umum.html">Jurnal Umum</a>
+                                </li>
+                                <li class="submenu-item active ">
+                                    <a href="accounting-laporan.html">Laporan</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="sidebar-item  has-sub ">
+                            <a href="#" class='sidebar-link'>
+                                <i class="ri-shield-user-line"></i>
+                                <span>Manajerial</span>
+                            </a>
+                            <ul class="submenu ">
+                                <li class="submenu-item ">
+                                    <a href="manajerial-simpanan pokok.html">Simpan Pokok</a>
+                                </li>
+                                <li class="submenu-item ">
+                                    <a href="manajerial-simpanan wajib.html">Simpan Wajib</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="sidebar-item  has-sub active">
+                            <a href="#" class='sidebar-link'>
+                                <i class="ri-shield-user-line"></i>
+                                <span>Manajemen</span>
+                            </a>
+                            <ul class="submenu ">
+                                <li class="submenu-item ">
+                                    <a href="manajemen-learning.html">Learning</a>
+                                </li>
+                                <li class="submenu-item active">
+                                    <a href="manajemen-promosi.html">Promosi</a>
+                                </li>
+                                <li class="submenu-item ">
+                                    <a href="manajemen-FAQ.html">FAQ</a>
+                                </li>
+                                <li class="submenu-item ">
+                                    <a href="manajemen-kritik saran.html">Kritik dan Saran</a>
+                                </li>
+                                <li class="submenu-item ">
+                                    <a href="manajemen-master UoM.html">Master UoM</a>
+                                </li>
+                                <li class="submenu-item ">
+                                    <a href="manajemen-bank.html">Bank</a>
+                                </li>
+                            </ul>
+                        </li>
+
+
+
+                    </ul>
+                </div>
+                <button class="sidebar-toggler btn x"><i data-feather="x"></i></button>
+            </div>
+        </div>
+        <div id="main2">
+            <div class="row py-3 px-3" style="background-color: #7AD759;">
+                <div class="col-12">
+                    <div class="dropdown">
+                        <a class="btn btn-primary dropdown-toggle float-end" href="#" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false" style="border: 0;">
+                            <img class="avatar avatar-lg img-fluid" src="assets/images/faces/1.jpg" alt=""
+                                style="width: 50px;">
+                            Admin
+                        </a>
+
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a style="border-bottom: solid 1px #a5a5a5;" class="dropdown-item" href="#">Profile</a>
+                            </li>
+                            <li><a class="dropdown-item" href="#">Notifikasi</a></li>
+                            <li><a class="dropdown-item" href="#">Log Out</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="main2">
+            <header class="mb-3">
+                <a href="#" class="burger-btn d-block d-xl-none">
+                    <i class="bi bi-justify fs-3"></i>
+                </a>
+            </header>
+            <div class="page-content">
+                <div id="main-content" style="padding: 0; margin: 2rem;">
+
+                    <div class="page-heading">
+                        <div class="page-title">
+                            <div class="row">
+                                <div class="col-12 col-md-6 order-md-1 order-last">
+                                    <h3>Promosi</h3>
+                                    <p class="text-subtitle text-muted">Promosi.</p>
+                                </div>
+                                <div class="col-12 col-md-6 order-md-2 order-first">
+                                    <nav aria-label="breadcrumb" class="breadcrumb-header float-start float-lg-end">
+                                        <ol class="breadcrumb">
+                                            <li class="breadcrumb-item active" aria-current="page">Promosi</li>
+                                        </ol>
+                                    </nav>
+                                </div>
+                            </div>
+                        </div>
+                        <section class="section">
+                            <div class="card">
+                                <div class="card-header">
+                                    <h4 class="card-title">Promosi</h4>
+                                </div>
+
+                                <div class="card-body">
+                                    <a href="https://dev.panganhub.hdnmetatech.com/promosi/add"
+                                        class="btn btn-success">Tambah</a>
+                                    <p><br></p>
+                                    <div class="col-12 table-responsive">
+                                        <div id="DataTables_Table_0_wrapper"
+                                            class="dataTables_wrapper dt-bootstrap4 no-footer">
+                                            <div class="row">
+                                                <div class="col-sm-12 col-md-6">
+                                                    <div class="dataTables_length" id="DataTables_Table_0_length">
+                                                        <label>Show <select name="DataTables_Table_0_length"
+                                                                aria-controls="DataTables_Table_0"
+                                                                class="custom-select custom-select-sm form-control form-control-sm">
+                                                                <option value="10">10</option>
+                                                                <option value="25">25</option>
+                                                                <option value="50">50</option>
+                                                                <option value="100">100</option>
+                                                            </select> entries</label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-12 col-md-6">
+                                                    <div id="DataTables_Table_0_filter" class="dataTables_filter">
+                                                        <label>Search:<input type="search"
+                                                                class="form-control form-control-sm" placeholder=""
+                                                                aria-controls="DataTables_Table_0"></label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-sm-12">
+                                                    <table
+                                                        class="table table-bordered approval_datatable dataTable no-footer"
+                                                        id="DataTables_Table_0" role="grid"
+                                                        aria-describedby="DataTables_Table_0_info"
+                                                        style="width: 938px;">
+                                                        <thead>
+                                                            <tr role="row">
+                                                                <th class="sorting" tabindex="0"
+                                                                    aria-controls="DataTables_Table_0" rowspan="1"
+                                                                    colspan="1" style="width: 152px;"
+                                                                    aria-label="Judul Promosi: activate to sort column ascending">
+                                                                    Judul Promosi</th>
+                                                                <th class="sorting" tabindex="0"
+                                                                    aria-controls="DataTables_Table_0" rowspan="1"
+                                                                    colspan="1" style="width: 60px;"
+                                                                    aria-label="Point: activate to sort column ascending">
+                                                                    Point</th>
+                                                                <th class="sorting" tabindex="0"
+                                                                    aria-controls="DataTables_Table_0" rowspan="1"
+                                                                    colspan="1" style="width: 190px;"
+                                                                    aria-label="Deskripsi Promosi: activate to sort column ascending">
+                                                                    Deskripsi Promosi</th>
+                                                                <th class="sorting" tabindex="0"
+                                                                    aria-controls="DataTables_Table_0" rowspan="1"
+                                                                    colspan="1" style="width: 143px;"
+                                                                    aria-label="Foto Promosi: activate to sort column ascending">
+                                                                    Foto Promosi</th>
+                                                                <th class="sorting" tabindex="0"
+                                                                    aria-controls="DataTables_Table_0" rowspan="1"
+                                                                    colspan="1" style="width: 203px;"
+                                                                    aria-label="Tanggal: activate to sort column ascending">
+                                                                    Tanggal</th>
+                                                                <th width="100px" class="sorting_disabled" rowspan="1"
+                                                                    colspan="1" style="width: 82px;" aria-label="Aksi">
+                                                                    Aksi</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr role="row" class="odd">
+                                                                <td>Promosi 5</td>
+                                                                <td>10</td>
+                                                                <td>Des Promosi 5</td>
+                                                                <td><img src="https://dev.api.panganhub.hdnmetatech.com/storage/images/promosi/BQqDRHwpB9mIB1q6Pvn6gyrasT0xXASgz2KaHCyy.jpg"
+                                                                        height="240px"></td>
+                                                                <td>22-12-2023 10:17:51</td>
+                                                                <td>
+                                                                    <div class="btn-group">
+                                                                        <button type="button"
+                                                                            class="btn btn-danger dropdown-toggle"
+                                                                            data-toggle="dropdown" aria-haspopup="true"
+                                                                            aria-expanded="false">
+                                                                            Aksi
+                                                                        </button>
+                                                                        <div class="dropdown-menu">
+                                                                            <a class="dropdown-item"
+                                                                                href="https://dev.panganhub.hdnmetatech.com/promosi/edit/eyJpdiI6IjBLY201eXZpMldmOUFUVDdrVFBMTWc9PSIsInZhbHVlIjoiREx6U3lIdVZTUHZXa0kzQU9kMWJXVGZMOHVoanJVRWVhVnVRcDM4VTNZV3RtcnRHTVl1c29XcHNsNDdVTFN6RWQrdEY2a1VRZnJvbEVJMHBXQ2Z3andib1dmVTBsS3hMNzg1Wml5UkJXTGhNNUhuUTdDRUIwMTJsMHFUOFZLbDRRcVNhVXJXL0IvQWVhQU4zZDhIRVRnRVAzd0VCb0l4em5GMkRkKzNKendzK3A0WUlvWTQ4ZEcyQXBHeDAwb0lremZXMHRRMTlsUlowSDZJZDMvaWtCcGtUNWw4U3U0N3hQNUwrM0pCZlIxS1VoRXdBTzhpWGUxVXpyaUJHWTFHdDFYL20xL3VlcGJENlhTTk5lYU9ITmZsY1k0anBQc2Y5Nk52ZzJyeW5ZakE3bkNMSGtRd0k0cEJRdm1XK1N1Y2Jod3ZTWVBpeGd0bFJpVTRSQzhxYlhKRzBXckNYQzMzbmRFSHBsUnllTk9ocWVMNitBNitWRUJNUFVTOFd1bC9OeXVjZ0owenhFM3JIdUsvaTJLMXl4WmZoRytqYUw3TkdPdjFqTUQ2QkJ5clVtajUrQWpSSkNteHNtaVlYamxCMiIsIm1hYyI6ImFhY2Y3YWZjNmQzMTA3M2RjZDAyZjI4NDUzZGNhNjc3YTMyNWNhNzQyNzQ1YWYwN2Q1ZDJmM2MyNTdlMmIxNjgiLCJ0YWciOiIifQ==">Edit</a>
+                                                                            <a class="dropdown-item"
+                                                                                href="https://dev.panganhub.hdnmetatech.com/promosi/delete/eyJpdiI6ImhmeWk2L2dPNDYzTTFDbjBtd1ZFTWc9PSIsInZhbHVlIjoic1d6WElkTXI1NmJQRTY2R0ZuSVpKUUpqalpsdjcwSEwwbVZqMmI0by8wY1lmZ2RaelpDZkt3U3VlQ3lWczFPTXFYbEhCeDEvUk44Y25na2I4ckdBaUVEelJDdnRXZEh4MzJBTzlsVW5tN1E4a1VYZ0YyeFcvazhWZXJNQXhxclMrRm11ZDNQTUZBeFBpUStjRWNVK3NVZCtFc2s5VnE4TWV3SnoxbFdjaFNNRmwvamRGNjBidWpXbmpvQjhOZ1NNdWhRRDdEQVhZSnVIN1dsb0FleXpzUUZhMENiQWVoSitiV3FWaWVKQ0VNZ3lEOGpiV0hDMDE5bkU1UjBqaDhFR29OUjh4VVZSaEpnVlJZN2VYd1pPU3BidUdpSFhDTVRHNEwxMVBQU0xzNno2VjVVLzJlcTNKV2xMNmlxbWw2Mnh1ZUxkSlJLY20relovbE9yeWpnaHdlbTJUaFEzc29QSC90OXkzMmk1ZklaTzU4SXdSRVlyZ3RaQWZBVnZDMDN4SkFBVG5SRitRdEJHaW8rL1doMUlGS3FiZDhlZ2pSbDhaSWxIUzRsc1I4RDh5ZjBwYWFBa1RoTG1DcHhQMjBVRyIsIm1hYyI6ImY5YzQwNDM4MzQwODI0OTM5N2NlNzg4ZmFlNzcyZjczMDk3YTY5NTk1OGMwMjY5MWI0YjUyNDM4ZTQzNWVjMmQiLCJ0YWciOiIifQ=="
+                                                                                onclick="return confirm('Apakah Anda yakin ingin menghapus data ini, tindakan ini menghapus data dan tidak dapat DIBATALKAN?')">Hapus</a>
+                                                                        </div>
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                            <tr role="row" class="even">
+                                                                <td>Promosi 4</td>
+                                                                <td>10</td>
+                                                                <td>Des Promosi 4</td>
+                                                                <td><img src="https://dev.api.panganhub.hdnmetatech.com/storage/images/promosi/5w1Kj2VzVSPiTn4R2mL3l6gqpQ2wAb7Cabb1fjYD.jpg"
+                                                                        height="240px"></td>
+                                                                <td>22-12-2023 10:17:51</td>
+                                                                <td>
+                                                                    <div class="btn-group">
+                                                                        <button type="button"
+                                                                            class="btn btn-danger dropdown-toggle"
+                                                                            data-toggle="dropdown" aria-haspopup="true"
+                                                                            aria-expanded="false">
+                                                                            Aksi
+                                                                        </button>
+                                                                        <div class="dropdown-menu">
+                                                                            <a class="dropdown-item"
+                                                                                href="https://dev.panganhub.hdnmetatech.com/promosi/edit/eyJpdiI6ImJlRXhnOHV1eXlyV3RhbXFpeWhkdnc9PSIsInZhbHVlIjoiNXlpaXBVZEVCVVYrRnh4c1BTSUpGRmRza09PSnFjcUd4Y0d3cWk1blAxK3dNY2lwaFpSTTlWZC9vZnc0czI1ZGtvQklicFgrVVRoTXVQaUJJczFFRE92VDFwOTljT0R5MFpodXhQY2hYeTZVWjRtdGVvREFIY25GOVVHWks0dHhiVmdpbUUvRkJlY3Y2QnJ5aTRLUTBldjdpSUJNMVdnRWE3TnBWUTdBS2w4dkVsQjVaUzhxeld5eXhicCtaZUJnZGJkT1dYZjJYbXA4MDB1RnNna3NER0VSOStmUEVsY0tDcHRTQ054V3EySW9yU09WcU5NSXIrbnBxdXNtTmlqczhTbjU2a3l1cDNSbnVqQ0UxbWZhNE5mRExuZW9wbk9EZUxlVnpCTytlN3lBYm1GTS9tcVdGbkViYnVqaHhQQzVrUUNENGtRWXBwNHc3ZTI3Y29RbDBFV2FheFJWbEErZHJpejJKZ2g2dzlnSVQvc1hsck1QUGV4SVNOZk9WUWVjZmN4VGRoY0MwTDRac1kvSkJOWWxFSVhjbm1qOHJMRWRWZ1N2c1ZzVy8wRkMrN1EzcStheThZL2h0Z2pGT3k4OSIsIm1hYyI6ImNhMWFmMDdkNDZjMzQ5MWI5YTA1NDEzNTUwZjI0YTE2MWNiMjc3M2Y2NWM2YzFkM2RlMzE0N2EzODdlNDEyMzUiLCJ0YWciOiIifQ==">Edit</a>
+                                                                            <a class="dropdown-item"
+                                                                                href="https://dev.panganhub.hdnmetatech.com/promosi/delete/eyJpdiI6Ii9Fd0VPTVNRczJqendCTktaWmZWQnc9PSIsInZhbHVlIjoiQ2trNmt3WHdrZlJMSXlKOVRBZndmNjFmc0d1REZldVEybW1XdjgyOHg5dDNLQndaUU00Zmk1QW5OSXA2S0kvNXlGMjI1eUZXSVRldW5lalNNMTBpOFVXWmVpTUdHcUhDSkhPUWhFR0w2bWlvbEhneE4wWWp2T0YvZ3E2cGRpdmNtcnhoUmZheURlS2RQQlc0eW51YUJHOU5kZklXS0g2MzEzUkNpOXlsZ3R0d0RLWG03N3c3dnV0RFc0c1kwY3E4ZGNGZ0xQV2tDS2hhdmt6UkV6QnZWSWtyNWYzS0FCODBsb3VhYlMwZjV6R2dMT1ZQRVhRdUFVcHZoNzVPa3JWTExGOTJibmNlN1BIVWkza0M2dm90bkREemhTVWFtVWFUY21nYmVCdEo0c3Z1REFEOTlodnpQZ1MvanVIdFpONS9aZUpSdjBMZGdncWs4V0F1dUZmdFY4N2xCRksrL2JnUWJ4TW04TGQ2RmR0VDdISjFuTGhmc2VZTC9LMmJoMVpJRm8xQWdkQWxsQWtBNWpjdTh2Y0lCaHRKbkpMdmwwbHVXVURuQnp2Mko3SmRveUcrVWlnb0wrVnU1NUJFVTB4WCIsIm1hYyI6IjM3YWQyZjNmYWQ5M2IwZjMzNDBhMDIyZDEyNGQ4MGM3ZTE5NGVhZTIzOTA1NzM2NDhjZTFjM2EzMDE4NzU4NzciLCJ0YWciOiIifQ=="
+                                                                                onclick="return confirm('Apakah Anda yakin ingin menghapus data ini, tindakan ini menghapus data dan tidak dapat DIBATALKAN?')">Hapus</a>
+                                                                        </div>
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                            <tr role="row" class="odd">
+                                                                <td>Promosi 3</td>
+                                                                <td>10</td>
+                                                                <td>Des Promosi 3</td>
+                                                                <td><img src="https://dev.api.panganhub.hdnmetatech.com/storage/images/promosi/3fu6ahiDS3EYgQmc2UPCKFr5TWfqGzivzqhJG35U.jpg"
+                                                                        height="240px"></td>
+                                                                <td>22-12-2023 10:17:51</td>
+                                                                <td>
+                                                                    <div class="btn-group">
+                                                                        <button type="button"
+                                                                            class="btn btn-danger dropdown-toggle"
+                                                                            data-toggle="dropdown" aria-haspopup="true"
+                                                                            aria-expanded="false">
+                                                                            Aksi
+                                                                        </button>
+                                                                        <div class="dropdown-menu">
+                                                                            <a class="dropdown-item"
+                                                                                href="https://dev.panganhub.hdnmetatech.com/promosi/edit/eyJpdiI6IkU0bEdUYUpnY0psMUI4Q2Vyd0hjd2c9PSIsInZhbHVlIjoiNHdUa2RTN21POUNDSUtOMm9Cd0hWNkc5ZnoyQ040eXI4ajNKbjRhS2VHMW95czc2UGNNS0phVWl4RFNUT2p2ZWZEYmZHZGZOc3NYYWFnczBFMU04RS9tYTczeVk3R2pwRXEwbndwUFU5djNTUFBCaVd0dWk0VGJOMy9vczVXbWdSdDdVZnd3TUhoVUdnN0JGNWxucFQ4d1c3c0FkVmh3UVpQcjJuRDZBYy9BNU1Xa0xWdkNoWHRxRUZHZWFRODh4dE9SRzBmWkU0MUJ4NllmOEowZnBSeHRkKzVITmwrSzZiQVpaNXROK1pzTWhNUmtEU1ozbDdaZUxKR0N2MHYxblpCN2hNUXpNNW14TGFtVUU2RE9rbzdQK2hhOXg2WEhsalJ3UFJhbWRnMnRIbzljWXI5SXpqdzFxMVVtUGllN0IrTlZZU1loZW5ramJTMWNxUWR2RTVRVWcvTEc2NjJudEtoTXhIYlBoNGVmOWZVN0NhUXM5Ym81RWVKZDlzUUZ2dGJsTFdqV3dKZi9NN2JyN2E0aVhSK1N1SldjdmpYU0J3OU9zbWxaaTRYUXhoYnY2czAvWkRCSkl1cktneEtERSIsIm1hYyI6ImQwMDNiMWMyOGMyMjI4NjI0ZmM1MGMxOTA4NzI1NWY4ZjliZDliODlmY2E0YTgwNWEzYmY5OTE2OTMwYzNmOTUiLCJ0YWciOiIifQ==">Edit</a>
+                                                                            <a class="dropdown-item"
+                                                                                href="https://dev.panganhub.hdnmetatech.com/promosi/delete/eyJpdiI6Ik1pUlJEeDR0dUIwSnFwSjU5UkE4c2c9PSIsInZhbHVlIjoiWXJzTUV6bS91SFcvRTM4VUJYTWY4T29Da0ZZOGtLTXdkSTczRzZVZkczSFVkUzdkdERpSzNja2ZRSUZNUHg5THZJbTQvUlRDVThDRFBHa2FqclNjTlJYTzJneG82bzZGcVhZZ3VFK2xlS2VUalFQY001VkJ4SnlRTDRsY2pTSnZYVU9nSGMrb2lhdDFwR2VJNGNFbENHNFRqTWlZV2JmRUwyQnNqVllnRVRReGc5dUxDWCt0ODV5NDhHMDByd2lybTJvKzVDM2F6QytxdFNTU2VqdFFmT3Y3ai9QeXZkbnMwZDZNVGVueEprN1NncHc5MEhLamcwRlFScUt3WmV5cFdzbm5EM3JCNmV1Mk5KczhQSmpHYkNJWHduaG5WVERHM21OMlZOZFdjQ2FzQTdpMU5HVjF4KzFyOE1sQnFSdXAzQVU2L0tLSjd1MEtNU01sc1lCdm5kMnJadzJMejIxb3dhV1I2Vnp1V2g5TkZQUDRmQlcvZmJSSEczNk84WU9qVE1VRlZod24wWGswUU5qZEJ0V25ySUowWnl5a2N0c1hjV2VVL0N5NDRYUURrVFJhSmdtVTdCMldxUzcvdDBhOSIsIm1hYyI6ImFmZDU4NjBmOTFhNTJhYjRhYjA2NjhmNjY0MDQ1ZDU3YjgzNGRjZGQwMjQ4NTAwYTU3YjNjNjRkY2Y5NTcyNmUiLCJ0YWciOiIifQ=="
+                                                                                onclick="return confirm('Apakah Anda yakin ingin menghapus data ini, tindakan ini menghapus data dan tidak dapat DIBATALKAN?')">Hapus</a>
+                                                                        </div>
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                            <tr role="row" class="even">
+                                                                <td>Promosi 2</td>
+                                                                <td>10</td>
+                                                                <td>Des Promosi 2</td>
+                                                                <td><img src="https://dev.api.panganhub.hdnmetatech.com/storage/images/promosi/3fu6ahiDS3EYgQmc2UPCKFr5TWfqGzivzqhJG35U.jpg"
+                                                                        height="240px"></td>
+                                                                <td>22-12-2023 10:17:50</td>
+                                                                <td>
+                                                                    <div class="btn-group">
+                                                                        <button type="button"
+                                                                            class="btn btn-danger dropdown-toggle"
+                                                                            data-toggle="dropdown" aria-haspopup="true"
+                                                                            aria-expanded="false">
+                                                                            Aksi
+                                                                        </button>
+                                                                        <div class="dropdown-menu">
+                                                                            <a class="dropdown-item"
+                                                                                href="https://dev.panganhub.hdnmetatech.com/promosi/edit/eyJpdiI6IlJHeXhISlBiOTQ1K1hnQmZEbm1DOWc9PSIsInZhbHVlIjoiWkJLOHJhYzJVR2hIMlowUEd1QXRjaW5DUGordlBISXdDREs3Y0tZTXMzQ2pUakRPbSt5emlEUVVXNVU1M2wxb00wMlJvbXJmM29NUzBsT3BkV01UQW1LK3VwODlBcUJhWnVwSXRLTmNGeStWU2RMZkwvQnhaWE9QQUtla1pDcXVBamRYcTBtNk9jUk1rSDI3STdZRS9zSXhkaUZGTVJCaHJKMTdiWXNOMHQyKy9WUTdWbFNWTU12Z3NPSWJMa2J3VXdrWmpYVytGbk9tRE9pL09FRTB3VzZpWGRIOXBmTHBwWjVKVVhPcE1oSEhhN2RFajVqa2o0Sm1JdUk5SUdtUS9ZTlJDZDAveFl2VHk2S2xlaTgrUytxYTZ6ZEZ0bXFDL2VpVHgyeXB3bEc1cU1qMERVMzZGYjFQbHlTY2V2cnZFZDVrZnc2dXorZzV2d2E2bjRZRStXUitsd0ZiZ3dOVTVRV0cwMHJEcDI3SVJOQ05TTU0zbUxHYjl6bWxJY2IrNzF3bzlwZUpJK0t0Y3hIYnVQNkVnajdxcVlMdjVwZm9vMlRtQkxYejZkSkVyNGRCZlJsQzN3eGg1ZXpuRVVRYiIsIm1hYyI6ImYyN2E3ZDRmMDMzNTdjMzM5MDZhMmZhZjc4NGE3NDEyNTk2MjMwNzNkMDlmZGI4MWEyMDZjNjc5NWM0ZTM4MjYiLCJ0YWciOiIifQ==">Edit</a>
+                                                                            <a class="dropdown-item"
+                                                                                href="https://dev.panganhub.hdnmetatech.com/promosi/delete/eyJpdiI6IjMwTmlnS2o4WUxWWlVrUGZxTzYrRkE9PSIsInZhbHVlIjoidzFMd29Yb0phM0gvVFQ3SVRxTGhYN3I1RUI3N2dNQ1BKUm1ETExZLy9zS2V3UVlyYWZpWEg1ZjFJeW5taS83SkttTG90ZVRaWVFTck02Yk1UN3IzZFc0eVZpd0x3UkFTSWpqVVg1dUpyOTlTSGQ4Q0VsODl1WDdESDVLVmtIUjIvdVJUWjNrY2RickRNYlRnbDRqdmYxS09KdzVVc0R5eVcxRTUrdkRPd2JORE56eGJWdlhBSUU3NUUrd29uVjRjblg0NmpUWVhqNEJpNWw4cGM3VDVrWndYNHV4RU9pZmwyajJrWWZxUndxcENhL0ZBb21uSER2V3ZoWU5Mc3FTRDNQdi9ReDJJemJIUitjM2U5djdRUHlJSGpvbkZteUhDWUR1RmFTSndjMHRMOEIzcSswNFpsMXNWTVZHYjJNWStsNC9NWDRrOHZtd0Y0VFYzZlBlN1E3ZjdKbkNJN0MrdXVsQkVvRnJKbzk5bXkwc3E1U0hTZG5XUFVvb3NpaUFTWlJWU0dyRE0zYW5lSnc4SXAwNXlSc3Z4SWRkcTlUNkNwcEtZdk9NaTUva1lERURCam9lL21vUGh5aUhVZkJPZyIsIm1hYyI6ImYxYmIyMDBmNDgwODdjZGYzNDJmMWRkNzFlMGI0NzBjZmMwODM4MDMyYTI0ZGEyMGY3OTZhN2FmYmZkZWRmODAiLCJ0YWciOiIifQ=="
+                                                                                onclick="return confirm('Apakah Anda yakin ingin menghapus data ini, tindakan ini menghapus data dan tidak dapat DIBATALKAN?')">Hapus</a>
+                                                                        </div>
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                            <tr role="row" class="odd">
+                                                                <td>Promosi 1</td>
+                                                                <td>10</td>
+                                                                <td>Des Promosi 1</td>
+                                                                <td><img src="https://dev.api.panganhub.hdnmetatech.com/storage/images/promosi/2ysoD0bwRPAv4urrwTTh8ZaJ5hN83klGs0NsXgQ2.jpg"
+                                                                        height="240px"></td>
+                                                                <td>22-12-2023 10:17:50</td>
+                                                                <td>
+                                                                    <div class="btn-group">
+                                                                        <button type="button"
+                                                                            class="btn btn-danger dropdown-toggle"
+                                                                            data-toggle="dropdown" aria-haspopup="true"
+                                                                            aria-expanded="false">
+                                                                            Aksi
+                                                                        </button>
+                                                                        <div class="dropdown-menu">
+                                                                            <a class="dropdown-item"
+                                                                                href="https://dev.panganhub.hdnmetatech.com/promosi/edit/eyJpdiI6Im5SbkVESjdQa3RFRlVqcVNsVStYeEE9PSIsInZhbHVlIjoic1dNandSNXpINXVPSHl0cjZwbE1uaUlUcjI2Ym5VcDZONnFFdjVSN3laUE84dDRuS09sS1dRTHpCeFBJOUZPeDlha3hUcHprTGI1REw4T093bExRN1FYcjdid0hDbE9pN2lSMnowNGFmeWUvSElGVllOVTlBa21tQ245T2hLeUhubG0wQzBQRmRxNFd0Rk5iRkpDT2JMK3BNSWwxSWc5SGFpT255TUtKdytpY3IzRUZHOWVWUzNiNDAybDI3L0lZTjVoSFpoak9wUms4aUtOY2xnZThSbjd1ZlZRNjI0NGlWTUFUQlkzbnNoT0RZWVB0eEw2NjJNcnVUc3VzbFl2R2tNZ1I4SmZCSi9ocjRqL3RjNGVpalgwNUNQQlM2SWk4SmpIRUd1ODFjeWdKa0oyL3k1Wk1vaTg5bFB2UUgvT291RGlpd08vWWt2ZVA4NkxiRDE3ZTBuUkdsTS9XSlNsUlBPZXRlUkIvUXBCRHV2Q0prY29xNTJXRFdQVnVJMjRQTjFlcG9sdDRYU0did2lDeC9sV0dmOXJ2WExIV0FDUTlTaEFZUzlzOTRveGlTbHJLMGp0cUNkV05zNXFWL1BEWCIsIm1hYyI6IjhkMDk4NTM1NDg0MWMzNmIyYzZmMmVmODk2OWI0ZmI4N2M4ZTc3NjhjODgxNzkzMmQ1OTFlMGRmODI1YzNiNDgiLCJ0YWciOiIifQ==">Edit</a>
+                                                                            <a class="dropdown-item"
+                                                                                href="https://dev.panganhub.hdnmetatech.com/promosi/delete/eyJpdiI6IlY5QTJWYStzWFo2YU9qZDRMTHB5ZFE9PSIsInZhbHVlIjoiSzF4T0Jqb0NsK2NrQW1EbHNzaWlwaGQ5VUNtY0c0SVhEa3Z6TXFSOVlFeXQwaHJBWUpVbmtHNVBKZlA0QjRZSkIrSVlTekNoWG9KcStkUjEzSWxnUEU4N3Z3UTlyNnp5dDdHSWtOdEhlTndoTWQzRkx2aE0vaTQ2OEJnZ1hkclgwTE53M3Y3emE1WTd4N2xZQmQ0R3g1VUUxeFJSNzFya0lsV1E4WFhlUFhUdkRFTW5ZamJ4ZXNlYTBZeG5YYklIdmt2WHpLcTBwWDUyTlk5SXE2Y2tmMzJ5M3FiTk0vRVNwVSthQVgxVkJtMUZFZUFTaVJyYzFqbGVKbE54cGFVTjBQSmgvTHg0cEdWOHhBNkNrNU9aRS9KZisyZVVKMUlkZXoxVzBsaE8zbzRCMzlncEYzUjdLeGZmN1NUekR6MUJDcDVuSmxrd0MvYldrR09yQnQzOEdMVzQ3YzM1UlVmU29xSXpUQ0JKc3I4OStWYkdjSytBYlY1Tk9SUEtkaEtPbW15RGVCd2tMeHB3YWtZdFV1RG5hSngzSjhXUnorR21wOGtrN0hEdWI5WnpOMEJZTEkrUjhJTkVIR1ZodXVpdSIsIm1hYyI6IjYwODViMmQ1N2NlMjgwNDRhZGM5YjBmMzExOTk1ZDk0Nzk5NzZjYmE5ODlkOTcyMGM2MTE5YzRhMzI0MmFiNGUiLCJ0YWciOiIifQ=="
+                                                                                onclick="return confirm('Apakah Anda yakin ingin menghapus data ini, tindakan ini menghapus data dan tidak dapat DIBATALKAN?')">Hapus</a>
+                                                                        </div>
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                    <div id="DataTables_Table_0_processing"
+                                                        class="dataTables_processing card" style="display: none;">
+                                                        Processing...</div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-sm-12 col-md-5">
+                                                    <div class="dataTables_info" id="DataTables_Table_0_info"
+                                                        role="status" aria-live="polite">Showing 1 to 5 of 5 entries
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-12 col-md-7">
+                                                    <div class="dataTables_paginate paging_simple_numbers"
+                                                        id="DataTables_Table_0_paginate">
+                                                        <ul class="pagination">
+                                                            <li class="paginate_button page-item previous disabled"
+                                                                id="DataTables_Table_0_previous"><a href="#"
+                                                                    aria-controls="DataTables_Table_0" data-dt-idx="0"
+                                                                    tabindex="0" class="page-link">Previous</a></li>
+                                                            <li class="paginate_button page-item active"><a href="#"
+                                                                    aria-controls="DataTables_Table_0" data-dt-idx="1"
+                                                                    tabindex="0" class="page-link">1</a></li>
+                                                            <li class="paginate_button page-item next disabled"
+                                                                id="DataTables_Table_0_next"><a href="#"
+                                                                    aria-controls="DataTables_Table_0" data-dt-idx="2"
+                                                                    tabindex="0" class="page-link">Next</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+
+                    <footer>
+                        <div class="footer clearfix mb-0 text-muted">
+                            <div class="float-start">
+                                <p>2023 © PanganHub</p>
+                            </div>
+                            <div class="float-end">
+
+                            </div>
+                        </div>
+                    </footer>
+                </div>
+            </div>
+        </div>
+        <script src="assets/vendors/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+        <script src="assets/js/bootstrap.bundle.min.js"></script>
+
+        <script src="assets/vendors/apexcharts/apexcharts.js"></script>
+        <script src="assets/js/pages/dashboard.js"></script>
+
+        <script src="assets/js/mazer.js"></script>
+</body>
+
+</html>
